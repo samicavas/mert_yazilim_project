@@ -1,0 +1,963 @@
+{
+	"info": {
+		"_postman_id": "b7c0bc2a-0fb1-4627-8ce9-09ca55bfff25",
+		"name": "mert_yazilim",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employess",
+			"item": [
+				{
+					"name": "GetEmployess",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Employess/GetEmployess",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Employess",
+								"GetEmployess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEmployessById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Employess/GetEmployessById?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Employess",
+								"GetEmployessById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddEmployess",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastName\": \"Deneme\",\r\n    \"firstName\": \"Deneme\",\r\n    \"title\": \"Deneme\",\r\n    \"titleOfCourtesy\": \"Deneme\",\r\n    \"address\": {\r\n        \"phone\": \"1234567\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Employess/AddEmployess",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Employess",
+								"AddEmployess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEmployess",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44354/api/Employess/DeleteEmployess?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Employess",
+								"DeleteEmployess"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEmployess",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":7,\r\n    \"lastName\": \"Yeni Deneme\",\r\n    \"firstName\": \"Yeni Deneme\",\r\n    \"title\": \"Yeni Deneme\",\r\n    \"titleOfCourtesy\": \"Yeni Deneme\",\r\n    \"address\": {\r\n        \"phone\": \"1234567\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Employess/UpdateEmployess",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Employess",
+								"UpdateEmployess"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "GetCategories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Categories/GetCategories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Categories",
+								"GetCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCategoriesById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Categories/GetCategoriesById?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Categories",
+								"GetCategoriesById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCategories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Deneme\",\r\n    \"description\": \"Deneme\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Categories/AddCategories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Categories",
+								"AddCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategories",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44354/api/Categories/DeleteCategories?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Categories",
+								"DeleteCategories"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategories",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"name\": \"Yeni Deneme\",\r\n    \"description\": \"Yeni Deneme\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Categories/UpdateCategories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Categories",
+								"UpdateCategories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "GetProducts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Products/GetProducts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Products",
+								"GetProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductsById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Products/GetProductsById?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Products",
+								"GetProductsById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProducts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Deneme\",\r\n    \"supplierId\": 2,\r\n    \"categoryId\": 3,\r\n    \"quantityPerUnit\": \"Deneme\",\r\n    \"unitPrice\": 22.0,\r\n    \"unitsInStock\": 53\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Products/AddProducts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Products",
+								"AddProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProducts",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44354/api/Products/DeleteProducts?id=4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Products",
+								"DeleteProducts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProducts",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":5,\r\n    \"name\": \"Yeni Deneme\",\r\n    \"supplierId\": 2,\r\n    \"categoryId\": 3,\r\n    \"quantityPerUnit\": \"Yeni Deneme\",\r\n    \"unitPrice\": 22.0,\r\n    \"unitsInStock\": 53\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Products/UpdateProducts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Products",
+								"UpdateProducts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shippers",
+			"item": [
+				{
+					"name": "GetShippers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Shippers/GetShippers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Shippers",
+								"GetShippers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetShippersById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Shippers/GetShippersById?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Shippers",
+								"GetShippersById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddShippers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"Deneme\",\r\n    \"phone\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Shippers/AddShippers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Shippers",
+								"AddShippers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteShippers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44354/api/Shippers/DeleteShippers?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Shippers",
+								"DeleteShippers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateShippers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"companyName\": \"Yeni Deneme\",\r\n    \"phone\": \"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Shippers/UpdateShippers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Shippers",
+								"UpdateShippers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Suppliers",
+			"item": [
+				{
+					"name": "GetSuppliers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Suppliers/GetSuppliers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Suppliers",
+								"GetSuppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSuppliersById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Suppliers/GetSuppliersById?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Suppliers",
+								"GetSuppliersById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddSuppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"Deneme\",\r\n    \"contactName\": \"Deneme\",\r\n    \"contactTitle\": \"Deneme\",\r\n    \"address\": {\r\n        \"phone\": \"123123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Suppliers/AddSuppliers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Suppliers",
+								"AddSuppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSuppliers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44354/api/Suppliers/DeleteSuppliers?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Suppliers",
+								"DeleteSuppliers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSuppliers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"companyName\": \"Yeni Deneme2\",\r\n    \"contactName\": \"Yeni Deneme\",\r\n    \"contactTitle\": \"Yeni Deneme\",\r\n    \"address\": {\r\n        \"phone\": \"1234567890\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Suppliers/UpdateSuppliers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Suppliers",
+								"UpdateSuppliers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "GetCustomers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Customers/GetCustomers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Customers",
+								"GetCustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCustomersById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Customers/GetCustomersById?id=AROUT",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Customers",
+								"GetCustomersById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "AROUT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCustomers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"DNM\",\r\n    \"companyName\": \"Deneme\",\r\n    \"contactName\": \"Deneme\",\r\n    \"contactTitle\": \"Deneme\",\r\n    \"address\": {\r\n        \"phone\": \"12345\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Customers/AddCustomers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Customers",
+								"AddCustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCustomers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44354/api/Customers/DeleteCustomers?id=AROUT",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Customers",
+								"DeleteCustomers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "AROUT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCustomers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"AROUT\",\r\n    \"companyName\": \"Yeni Deneme\",\r\n    \"contactName\": \"Yeni Deneme\",\r\n    \"contactTitle\": \"Yeni Deneme\",\r\n    \"address\": {\r\n        \"phone\": \"12345\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44354/api/Customers/UpdateCustomers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44354",
+							"path": [
+								"api",
+								"Customers",
+								"UpdateCustomers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
